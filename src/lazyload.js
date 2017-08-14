@@ -20,10 +20,7 @@
         ot += g.offsetTop;
       } while (g = g.offsetParent)
     }
-    return {
-      left: d,
-      top: ot
-    }
+    return ot;
   }
 
   // Image is loaded from data-original attribute
@@ -35,7 +32,7 @@
   }
 
   // data-original attribute is deleted to avoid multiple loadings
-  function dounload(image) {
+  function unload(image) {
     return new Promise(function(resolve) {
       image.removeAttribute("data-original");
       resolve(image);
@@ -49,11 +46,11 @@
     var d = f();
     for (var k = 0; k < l.length; k++) {
       var h = l[k];
-      var g = b(h).top - 200;
+      var g = b(h) - 200;
       if (g < (d + j)) {
         doload(h)
           .then(function(response) {
-            dounload(response);
+            unload(response);
           })
       }
     }
