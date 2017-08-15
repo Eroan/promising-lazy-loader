@@ -45,7 +45,7 @@
     var d = f();
     for (var k = 0; k < l.length; k++) {
       var h = l[k];
-      var g = b(h) - 200;
+      var g = b(h);
       if (g < (d + j)) {
         doload(h)
           .then(function(response) {
