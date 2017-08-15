@@ -1,8 +1,11 @@
 <html>
 
 <head>
-  <style>img{width:800px;height:600px;border:1px solid black;}</style>
-  <script src="src/lazyload.js"></script>
+  <style>
+  img{opacity:1;transition:opacity .5s ease-in-out;}
+  img[data-original]{opacity:0}
+  </style>
+  <script src="src/lazyload.js" defer></script>
 </head>
 <body>
 
@@ -22,9 +25,12 @@
 
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="https://upload.wikimedia.org/wikipedia/commons/0/01/Ruslan.jpg" /><br /><br /><br /><br />
 
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvVLasc4ubItvMOTAsWTmLxpCjYP08F0VgZrUCsUUBi1fn4q3QQ" /><br /><br /><br /><br />
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="https://upload.wikimedia.org/wikipedia/commons/2/20/Noerdlingen_town_hall_from_Daniel.jpg" /><br /><br /><br /><br />
 
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="https://upload.wikimedia.org/wikipedia/commons/7/71/Menschliches_auge.jpg" /><br /><br /><br /><br />
+
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="https://upload.wikimedia.org/wikipedia/commons/e/e9/Pedicularis_sylvatica.jpeg" /><br /><br /><br /><br />
+
 </body>
 
 </html>

@@ -1,6 +1,5 @@
 !(function(a, e) {
 
-
   function f() {
     var d = 0;
     if (e.body && e.body.offsetWidth) {
